@@ -42,4 +42,13 @@ JsonService.find = async (callback) => {
         }
     )
 };
+
+JsonService.findById = async (table, id) => {
+    return await JsonService.find((db) => {
+        return db[table].find((obj) => {
+            return obj._id === id
+        })
+    })
+}
+
 module.exports = JsonService;

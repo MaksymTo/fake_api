@@ -8,6 +8,7 @@ const server = jsonServer.create();
 const accessHeader = require('./middleware/access-headers');
 
 const usersRoute = require("./routes/users.route");
+const threadsRoute = require("./routes/threads.route");
 
 if (!config.get("myprivatekey")) {
   console.error("FATAL ERROR: myprivatekey is not defined.");
@@ -21,6 +22,7 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser)
 
 server.use("/api/users", usersRoute);
+server.use("/api/threads", threadsRoute);
 
 server.use(router);
 

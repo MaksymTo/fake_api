@@ -24,6 +24,11 @@ const UserSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255
     },
+    position: String,
+    description: String,
+    phone: String,
+    address: String,
+    organization: String,
 });
 
 const tokenGenerator =  function(id) {
