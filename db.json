@@ -1,1 +1,86 @@
-{"users":[]}
+{
+  "users": [
+    {
+      "_id": "5e13095244e24582b460517c",
+      "name": "Michelle Stewart",
+      "password": "$2b$10$JzoNeNEasPYqjMIBKsUNq.GrvtcBs9pIpG.DsMbdRYSkadjYBnHaK",
+      "email": "michelle@geekhub.ck.ua",
+      "position": "UX/UI Designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 500 400 300",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp"
+    },
+    {
+      "_id": "5e130a789b610a8363b4b316",
+      "name": "Jolene Stater",
+      "password": "$2b$10$B0MHdAq6iW9aQdYWmVRq1eCg4dbS0qndCTQA/TLiH5rfV07oZekYK",
+      "email": "jolene@geekhub.ck.ua",
+      "position": "UX/UI Designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 500 400 300",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp"
+    },
+    {
+      "_id": "5e130bde9b610a8363b4b317",
+      "name": "Lyall Roach",
+      "password": "$2b$10$C4mfhe13ioImNkdyPu0QhOJcsTZhsugpQqZcb8hYN7f4xDDw9P3O2",
+      "email": "lyall@geekhub.ck.ua",
+      "position": "UX/UI Designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 500 400 300",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp"
+    },
+    {
+      "_id": "5e130bf09b610a8363b4b318",
+      "name": "Dominic Lynton",
+      "password": "$2b$10$M9xFFRaCxH4ips4j53LHa.HdRW0BUN.c5aWMOuIACL4A6KnG8KINK",
+      "email": "dominic@geekhub.ck.ua",
+      "position": "UX/UI Designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 500 400 300",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp"
+    },
+    {
+      "_id": "5e130bfe9b610a8363b4b319",
+      "name": "Alex Tinyaev",
+      "password": "$2b$10$2B3T8aWNJa8jcMKb8imiGOEL6OnGQX0UdF3uLEsaF66vzEAhYzVsO",
+      "email": "alex@geekhub.ck.ua",
+      "position": "UX/UI Designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "phone": "+48 500 400 300",
+      "address": "65 Lorem St, Warshaw, PL",
+      "organization": "GeekHub Corp"
+    }
+  ],
+  "threads": [
+    {
+      "users": [
+        "5e130bfe9b610a8363b4b319",
+        "5e13095244e24582b460517c"
+      ],
+      "_id": "5e13343a5badff9ccfb36767",
+      "created_at": "2020-01-06T13:20:58.613Z",
+      "updated_at": "2020-01-06T13:20:58.613Z"
+    }
+  ],
+  "messages": [
+    {
+      "_id": "5e1335f89f86679d60d0897b",
+      "user": "5e130bfe9b610a8363b4b319",
+      "thread": "5e13343a5badff9ccfb36767",
+      "body": "Hello there! Can you say hello to me?",
+      "created_at": "2020-01-06T13:28:24.377Z"
+    },
+    {
+      "_id": "5e1338192ac80a9ed238a72d",
+      "user": "5e13095244e24582b460517c",
+      "thread": "5e13343a5badff9ccfb36767",
+      "body": "Hello there! Can you say hello to me?",
+      "created_at": "2020-01-06T13:37:29.153Z"
+    }
+  ]
+}

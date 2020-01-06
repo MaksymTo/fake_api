@@ -36,7 +36,14 @@ router.post("/", async (req, res) => {
     let user = new User({
         name: body.name,
         password: body.password,
-        email: body.email
+        email: body.email,
+
+        // TODO: remove when we have Edit API available
+        position: "UX/UI Designer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        phone: "+48 500 400 300",
+        address: "65 Lorem St, Warshaw, PL",
+        organization: "GeekHub Corp"
     });
 
     user.password = await bcrypt.hash(user.password, 10);
