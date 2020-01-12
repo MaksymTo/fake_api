@@ -94,14 +94,20 @@ router.get("/", auth, async (req, res) => {
 });
 
 // get thread messages
-router.get("/messages", auth, async (req, res) => {
-    // TODO: add validation that `body.thread._id` exists
+router.get("/messages/:id", auth, async (req, res, next) => {
+    const { id } = req.params;
 
-    const {body} = req;
+    try {
+        const thread = await JsonService.findById("threads", id);
 
-    const thread = await JsonService.findById("threads", body.thread._id)
-
-    res.jsonp(await getThreadFull(thread, req.user._id));
+        if (thread) {
+            res.jsonp(await getThreadFull(thread, req.user._id));
+        } else {
+            res.jsonp({ message: 'Thread not found'});
+        }
+    } catch(err) {
+        next(err);
+    }
 });
 
 
